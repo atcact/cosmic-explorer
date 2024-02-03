@@ -24,8 +24,18 @@ $(window).load(function () {
     });
 
     $("#data a").click(function (e) {
+        console.log(this);
         var ref = $(this).attr("class");
         solarsys.removeClass().addClass(ref);
+        $(this).parent().find('a').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+    }); 
+    $("#solar-system a").click(function (e) {
+        // setView("scale-s set-size");
+        var planet = $(this).attr("name");
+        console.log("Clicked on planet:", planet);
+        solarsys.removeClass().addClass(planet);
         $(this).parent().find('a').removeClass('active');
         $(this).addClass('active');
         e.preventDefault();
@@ -38,5 +48,4 @@ $(window).load(function () {
     $(".set-distance").click(function () { setView("scale-d set-distance"); });
 
     init();
-
 });

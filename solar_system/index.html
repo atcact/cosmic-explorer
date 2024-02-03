@@ -54,7 +54,7 @@
         <div id="universe" class="scale-stretched">
             <div id="galaxy">
                 <div id="solar-system" class="earth">
-                    <div id="mercury" class="orbit">
+                    <a id="mercury" class="orbit" name="mercury">
                         <div class="pos">
                             <div class="planet">
                                 <dl class="infos">
@@ -63,8 +63,8 @@
                                 </dl>
                             </div>
                         </div>
-                    </div>
-                    <div id="venus" class="orbit">
+                    </a>
+                    <a id="venus" class="orbit" name="venus">
                         <div class="pos">
                             <div class="planet">
                                 <dl class="infos">
@@ -73,8 +73,8 @@
                                 </dl>
                             </div>
                         </div>
-                    </div>
-                    <div id="earth" class="orbit">
+                    </a>
+                    <a id="earth" class="orbit" name="earth">
                         <div class="pos">
                             <div class="orbit">
                                 <div class="pos">
@@ -88,8 +88,8 @@
                                 </dl>
                             </div>
                         </div>
-                    </div>
-                    <div id="mars" class="orbit">
+                    </a>
+                    <a id="mars" class="orbit" name="mars">
                         <div class="pos">
                             <div class="planet">
                                 <dl class="infos">
@@ -98,8 +98,8 @@
                                 </dl>
                             </div>
                         </div>
-                    </div>
-                    <div id="jupiter" class="orbit">
+                    </a>
+                    <a id="jupiter" class="orbit" name="jupiter">
                         <div class="pos">
                             <div class="planet">
                                 <dl class="infos">
@@ -108,8 +108,8 @@
                                 </dl>
                             </div>
                         </div>
-                    </div>
-                    <div id="saturn" class="orbit">
+                    </a>
+                    <a id="saturn" class="orbit" name="saturn">
                         <div class="pos">
                             <div class="planet">
                                 <div class="ring"></div>
@@ -119,8 +119,8 @@
                                 </dl>
                             </div>
                         </div>
-                    </div>
-                    <div id="uranus" class="orbit">
+                    </a>
+                    <a id="uranus" class="orbit" name="uranus">
                         <div class="pos">
                             <div class="planet">
                                 <dl class="infos">
@@ -129,8 +129,8 @@
                                 </dl>
                             </div>
                         </div>
-                    </div>
-                    <div id="neptune" class="orbit">
+                    </a>
+                    <a id="neptune" class="orbit" name="neptune">
                         <div class="pos">
                             <div class="planet">
                                 <dl class="infos">
@@ -139,13 +139,14 @@
                                 </dl>
                             </div>
                         </div>
-                    </div>
-                    <div id="sun">
+                    </a>
+        
+                    <a id="sun" class="orbit" name="sun">
                         <dl class="infos">
                             <dt>Sun</dt>
                             <dd><span></span></dd>
                         </dl>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -159,5 +160,8 @@
         <script src="js/scripts.min.js"></script>
     
         <script src="script.js"></script>
+        <script src="https://threejs.org/build/three.js"></script>
+
+    
     </body>
 </html>
