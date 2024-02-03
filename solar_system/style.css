@@ -214,7 +214,7 @@ body {
 }
 
 #sun {
-  background-color: #fb7209;
+  background-color: #f3efeb;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 0 60px rgba(255, 160, 60, 0.4);
@@ -1544,12 +1544,7 @@ h1 span,
 
 #navbar a,
 #data a,
-#controls label {
-  color: rgba(255, 255, 255, 0.6);
-  display: block;
-  position: relative;
-  text-decoration: none;
-}
+
 
 #navbar a:hover,
 #data a:hover,
@@ -1577,8 +1572,7 @@ h1 span,
   right: 0;
 }
 
-#data,
-#controls {
+#data {
   z-index: 99;
   position: fixed;
   opacity: 1;
@@ -1687,27 +1681,6 @@ h1 span,
   z-index: 99;
 }
 
-#controls label.set-view:before {
-  font: bold small-caps 11px/20px sans-serif;
-}
-
-.view-3D #controls label.set-view:before {
-  content: "2D";
-  margin-left: 82px;
-}
-
-.view-2D #controls label.set-view:before {
-  content: "3D";
-  margin-left: 7px;
-}
-
-.view-3D #controls .set-view input:after {
-  margin-left: 3px;
-}
-
-.view-2D #controls .set-view input:after {
-  margin-left: 81px;
-}
 
 #controls label.set-zoom:before {
   font: normal small-caps 18px/14px sans-serif;
