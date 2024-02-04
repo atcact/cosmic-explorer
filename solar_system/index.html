@@ -15,20 +15,25 @@
 
     <!-- Further code here -->
     <body class="opening hide-UI view-2D zoom-large data-close controls-close">
-        <div id="navbar">
-            <a id="toggle-data" href="#data"><i class="icon-data"></i>Planets</a>
+        
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </div>
+        <div id="header">
+            <!-- <a id="toggle-data" href="#data"><i class="icon-data"></i>Planets</a> -->
             <h1>3D Solar System</h1>
         </div>
         <div id="data">
-            <a class="sun" title="sun" href="#sunspeed">Sun</a>
-            <a class="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
-            <a class="venus" title="venus" href="#venusspeed">Venus</a>
-            <a class="earth active" title="earth" href="#earthspeed">Earth</a>
-            <a class="mars" title="mars" href="#marsspeed">Mars</a>
-            <a class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
-            <a class="saturn" title="saturn" href="#saturnspeed">Saturn</a>
-            <a class="uranus" title="uranus" href="#uranusspeed">Uranus</a>
-            <a class="neptune" title="neptune" href="#neptunespeed">Neptune</a>
+            <a class="sun" name="sun" href="#sunspeed">Sun</a>
+            <a class="mercury" name="mercury" href="#mercuryspeed">Mercury</a>
+            <a class="venus" name="venus" href="#venusspeed">Venus</a>
+            <a class="earth active" name="earth" href="#earthspeed">Earth</a>
+            <a class="mars" name="mars" href="#marsspeed">Mars</a>
+            <a class="jupiter" name="jupiter" href="#jupiterspeed">Jupiter</a>
+            <a class="saturn" name="saturn" href="#saturnspeed">Saturn</a>
+            <a class="uranus" name="uranus" href="#uranusspeed">Uranus</a>
+            <a class="neptune" name="neptune" href="#neptunespeed">Neptune</a>
         </div>
         <div id="universe" class="scale-stretched">
             <div id="galaxy">
@@ -133,9 +138,18 @@
 
         <div id="popup" class="popup">
             <div class="popup-content">
-                <h2>Popup Title</h2>
-                <p>This is some content inside the popup.</p>
+                <div class="popup-left">
+                <img id="popup-image" class="popup-image" src="" alt="Planet Image">
+                </div>
+                <div class="popup-right">
+                <h2>Popup Title</h2>                
+                <!-- <p id="popup-text">popup fact</p> -->
+                <li id="popup-fact1"></li>
+                <li id="popup-fact2"></li>
+                <li id="popup-fact3"></li>
+                
                 <button id="closePopup" class="popup-btn"  onclick="closePopup()">Close</button>
+                </div>
             </div>
         </div>
 
