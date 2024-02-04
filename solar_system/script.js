@@ -74,6 +74,8 @@ $(window).load(function () {
 
     var trueAlert = "true alert";
     var falseAlert = "false alert";
+    var currPlanet = "sun";
+    // var nextPlanet = "mercury";
 
     function clickPlanet(element, e) {
         var planet = $(element).attr("name");
@@ -84,7 +86,8 @@ $(window).load(function () {
 
         createPopup(planet);
         // $("#popup h2").text("Information about " + planet);
-        changeAlert(planet);
+        changeAlert(planet)
+        currPlanet = planet;;
         // popup.show();
         e.preventDefault();
     };
@@ -106,6 +109,46 @@ $(window).load(function () {
     $("#closePopup").click(function() {
         console.log("Closing popup");
         popup.hide();
+    });
+
+    function switchPlanet() {
+        switch (currPlanet) {
+          case "sun":
+            currPlanet = "mercury";
+            break;
+          case "mercury":
+            currPlanet = "venus";
+            break;
+          case "venus":
+            currPlanet = "earth";
+            break;
+          case "earth":
+            currPlanet = "mars";
+            break;
+          case "mars":
+            currPlanet = "jupiter";
+            break;
+          case "jupiter":
+            currPlanet = "saturn";
+            break;
+          case "saturn":
+            currPlanet = "uranus";
+            break;
+          case "uranus":
+            currPlanet = "neptune";
+            break;
+          case "neptune":
+            currPlanet = "sun";
+            break;
+          default:
+            break;
+        }
+    }
+
+    $("#nextPopup").click(function () {
+        console.log("next popup");
+        switchPlanet();
+        createPopup(currPlanet);
     });
 
     function changeAlert(planet){
