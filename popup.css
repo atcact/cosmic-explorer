@@ -22,7 +22,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
 }
@@ -41,6 +41,10 @@
   object-fit: contain;
 }
 
+
+.question-img{
+  margin-bottom: 20px;
+}
 .popup-right {
   /* align-items: right; */
   margin: 5%;
@@ -52,8 +56,9 @@
   font-size: 16px;
   margin: 15px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between; 
   height: 100%;
+  margin-top: 20px;
 }
 .popup-right h2 {
   font-size: 36px;
