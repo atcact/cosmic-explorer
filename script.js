@@ -241,6 +241,7 @@ $(window).load(function () {
     console.log("next popup");
     switchPlanet();
     createPopup(currPlanet);
+    changeAlert(currPlanet);
   });
 
   function changeAlert(planet) {
