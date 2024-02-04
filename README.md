@@ -1,6 +1,6 @@
-# 
+# COSMIC EXPLORER
 
-Welcome to **name**, a web application developed as part of Hack at Brown 2024. This project is inspired from the hackathon's outer space theme to provide users with an immersive and educational experience exploring our solar system in 3D.
+Welcome to **Cosmic Explorer**, a web application developed as part of Hack at Brown 2024. This project is inspired from the hackathon's outer space theme to provide users with an immersive and educational experience exploring our solar system in 3D.
 
 ## Features
 

@@ -23,7 +23,7 @@
         </div>
         <div id="header">
             <!-- <a id="toggle-data" href="#data"><i class="icon-data"></i>Planets</a> -->
-            <h1>3D Solar System</h1>
+            <h1 class = "ourtitle">COSMIC EXPLORER</h1>
         </div>
         <div id="data">
             <a class="sun" name="sun" href="#sunspeed">Sun</a>
@@ -140,16 +140,24 @@
         <div id="popup" class="popup">
             <div class="popup-content">
                 <div class="popup-left">
-                <img id="popup-image" class="popup-image" src="" alt="Planet Image">
+                    <img id="popup-image" class="popup-image" src="" alt="Planet Image">
                 </div>
                 <div class="popup-right">
-                <h2>Popup Title</h2>                
+                    <h2>Popup Title</h2>                
                 <!-- <p id="popup-text">popup fact</p> -->
-                <li id="popup-fact1"></li>
-                <li id="popup-fact2"></li>
-                <li id="popup-fact3"></li>
-                
-                <button id="closePopup" class="popup-btn"  onclick="closePopup()">Close</button>
+                    <div class="popup-fact">
+                        <li id="popup-fact1"></li>
+                        <li id="popup-fact2"></li>
+                        <li id="popup-fact3"></li>
+                    </div>
+                    <div class="quiz">
+                        <p id="popup-quiz"></p>
+                        <div class="quiz-button">
+                            <button id="truebtn" class="truefalse-btn" onclick="truebtn()">True</button>
+                            <button id="falsebtn" class="truefalse-btn" onclick="falsebtn()">False</button>
+                        </div>
+                    </div>
+                    <button id="closePopup" class="popup-btn"  onclick="closePopup()">Close</button>
                 </div>
             </div>
         </div>

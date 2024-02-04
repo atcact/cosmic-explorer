@@ -34,15 +34,15 @@ $(window).load(function () {
     };
 
     var quizzes = {
-        mercury: ["Mercury is the hottest planet in our solar system ", "True"], 
-        venus: ["Venus rotates on its axis in the opposite direction compared to most planets", "True"],
-        earth : ["Earth's moon is the largest moon in the solar system", "False"],   
-        mars : ["Mars has the tallest volcano and the deepest canyon in our solar system.", "True"],
-        jupiter: ["Jupiter is the smallest planet in our solar system", "False"],
-        saturn: ["Saturn's stunning ring system is made of solid gold", "True"],
-        uraunus: ["Uranus is the largest planet in our solar system", "False"],
-        neptune: ["Neptune's atmosphere contains a significant amount of methane, giving it a blue color", "True"],
-        sun: ["The Sun is a solid, rocky body", "False"]
+        mercury: ["Mercury is the hottest planet in our solar system ", "True", "You are correct!!", "You are wrong :("], 
+        venus: ["Venus rotates on its axis in the opposite direction compared to most planets", "True", "You are correct!!", "You are wrong :("],
+        earth : ["Earth's moon is the largest moon in the solar system", "False", "You are wrong :(", "You are correct!!"],   
+        mars : ["Mars has the tallest volcano and the deepest canyon in our solar system.", "True", "You are correct!!", "You are wrong :("],
+        jupiter: ["Jupiter is the smallest planet in our solar system", "False", "You are wrong :(", "You are correct!!"],
+        saturn: ["Saturn's stunning ring system is made of solid gold", "True", "You are correct!!", "You are wrong :("],
+        uranus: ["Uranus is the largest planet in our solar system", "False", "You are wrong :(", "You are correct!!"],
+        neptune: ["Neptune's atmosphere contains a significant amount of methane, giving it a blue color", "True", "You are correct!!", "You are wrong :("],
+        sun: ["The Sun is a solid, rocky body", "False", "You are wrong :(", "You are correct!!"]
     };
 
     $("#toggle-data").click(function (e) {
@@ -71,6 +71,10 @@ $(window).load(function () {
 
     init();
 
+
+    var trueAlert = "true alert";
+    var falseAlert = "false alert";
+
     function clickPlanet(element, e) {
         var planet = $(element).attr("name");
         console.log("Clicked on planet:", planet);
@@ -79,7 +83,8 @@ $(window).load(function () {
         $(element).addClass('active');
 
         createPopup(planet);
-        $("#popup h2").text("Information about " + planet);
+        // $("#popup h2").text("Information about " + planet);
+        changeAlert(planet);
         // popup.show();
         e.preventDefault();
     };
@@ -87,12 +92,14 @@ $(window).load(function () {
 
     function createPopup(planet) {
         popup.show();
-        $("#popup h2").text("Information about " + planet);
+        // $("#popup h2").text("Information about " + planet);
         $("#popup-image").attr("src", "images/" + planet + ".gif");
-        // $("#popup-text").text(planetTexts[planet][0] || "No information available.");
         $("#popup-fact1").text(planetTexts[planet][0] || "No information available.");
         $("#popup-fact2").text(planetTexts[planet][1] || "No information available.");
         $("#popup-fact3").text(planetTexts[planet][2] || "No information available.");
+        $("#popup-quiz").text(quizzes[planet][0] || "No quiz available.");
+        console.log(planet.toUpperCase())
+        $("#popup h2").text(planet.toUpperCase());
 
     }
 
@@ -101,8 +108,20 @@ $(window).load(function () {
         popup.hide();
     });
 
+    function changeAlert(planet){
+        trueAlert = quizzes[planet][2];
+        falseAlert = quizzes[planet][3];
+    }
 
+    $("#truebtn").click(function(){
+        console.log("true was clicked");
+        alert(trueAlert);
 
-    
+    });
+
+    $("#falsebtn").click(function(){
+        console.log("false was clicked");
+        alert(falseAlert);
+    });
 
 });

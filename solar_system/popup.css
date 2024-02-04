@@ -26,10 +26,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .popup-left{
     justify-content: center;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
 }
 
 .popup-image{
@@ -48,20 +53,44 @@
     flex-direction: column;
     /* font-size: 36px; */
     font-size: 16px;
-    margin: 10px;
+    margin: 15px;
     align-items: center;
     justify-content: space-around;
+    height: 100%;
     
 
 }
 .popup-right h2{
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+.popup-fact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin: 2px; */
 }
 .popup-right li{
     align-self: center;
     margin: 2px;
+}
+.quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.truefalse-btn{
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 .popup-btn{

@@ -158,6 +158,7 @@ body {
   padding: 14px 50px;
   text-decoration: none;
   font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Change the color of links on hover */
@@ -175,6 +176,7 @@ body {
 
 
 
+
 #universe {
   z-index: 1;
   position: absolute;
@@ -185,6 +187,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 
 #galaxy {
   position: relative;
@@ -258,6 +262,20 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
+#data a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s ease; 
+}
+
+#data a:hover {
+  transform: scale(1.2); 
+}
+
 
 .ring {
   position: absolute;
@@ -1538,6 +1556,7 @@ dl.infos dd span:after {
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
+
 h1 {
   width: 100%;
   font-weight: 600;
@@ -1586,6 +1605,9 @@ h1 span,
 
 #data a.active {
   color: #0cf;
+}
+#data a.hover {
+  background-color: #0cf;
 }
 
 #header a {
