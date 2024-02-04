@@ -10,5 +10,16 @@ Welcome to **Cosmic Explorer**, a web application developed as part of Hack at B
 
 - **Educational Quiz:** Test your knowledge with an interactive quiz for each planet, making learning about space fun.
 
-## How to use
+## How to Use 
+
+- **  To use Cosmic Explorer on your local machine, follow these steps.
+1. Clone the repository:
+   ```sh
+   git clone
+2. Navigate to the project directory:
+4. Run the HTML File on a server:
+
+
+
+
 
