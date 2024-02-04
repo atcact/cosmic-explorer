@@ -110,6 +110,20 @@
     background-color: #526ED0;
     cursor: pointer;
 }
+.truefalse-btn{
+    align-self: bottom;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #D9D9D9;
+    color:#273B80;
+    
+}
+
+.truefalse-btn:hover{
+    color: #D9D9D9;
+    background-color: #526ED0;
+    cursor: pointer;
+}
 
 
 
