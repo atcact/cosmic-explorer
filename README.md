@@ -12,14 +12,14 @@ Welcome to **Cosmic Explorer**, a web application developed as part of Hack at B
 
 ## How to Use 
 
-- **  To use Cosmic Explorer on your local machine, follow these steps.
+- To use Cosmic Explorer on your local machine, follow these steps.
 1. Clone the repository:
    ```sh
    git clone
 2. Navigate to the project directory:
 4. Run the HTML File on a server
 
-- ** Or try it out in the following link:
+- Or try it out in the following link:
 https://atcact.github.io/cosmic-explorer/
 
 
