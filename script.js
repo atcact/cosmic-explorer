@@ -182,7 +182,7 @@ $(window).load(function () {
   function createPopup(planet) {
     popup.show();
     // $("#popup h2").text("Information about " + planet);
-    $("#popup-image").attr("src", "images/" + planet + ".gif");
+    $("#popup-image").attr("src", "./assets/images/" + planet + ".gif");
     $("#popup-fact1").text(
       planetTexts[planet][0] || "No information available."
     );
