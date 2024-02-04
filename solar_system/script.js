@@ -12,6 +12,7 @@ $(window).load(function () {
     };
 
     var setView = function (view) { universe.removeClass().addClass(view); };
+    var popup = $("#popup");
 
     $("#toggle-data").click(function (e) {
         body.toggleClass("data-open data-close");
@@ -24,21 +25,11 @@ $(window).load(function () {
     });
 
     $("#data a").click(function (e) {
-        console.log(this);
-        var ref = $(this).attr("class");
-        solarsys.removeClass().addClass(ref);
-        $(this).parent().find('a').removeClass('active');
-        $(this).addClass('active');
-        e.preventDefault();
+        clickPlanet(this, e);
     }); 
+
     $("#solar-system a").click(function (e) {
-        // setView("scale-s set-size");
-        var planet = $(this).attr("name");
-        console.log("Clicked on planet:", planet);
-        solarsys.removeClass().addClass(planet);
-        $(this).parent().find('a').removeClass('active');
-        $(this).addClass('active');
-        e.preventDefault();
+        clickPlanet(this, e);
     });
 
   
@@ -48,4 +39,51 @@ $(window).load(function () {
     $(".set-distance").click(function () { setView("scale-d set-distance"); });
 
     init();
+
+    function clickPlanet(element, e) {
+        var planet = $(element).attr("name");
+        console.log("Clicked on planet:", planet);
+        solarsys.removeClass().addClass(planet);
+        $(element).parent().find('a').removeClass('active');
+        $(element).addClass('active');
+        // e.stopPropagation();
+        $("#popup h2").text("Information about " + planet);
+        popup.show();
+        e.preventDefault();
+        
+
+    };
+
+    // function closePopup() {
+    //     console.log("Closing popup");
+    //     popup.hide();
+    // }
+
+    // popup.find(".popup-btn").on("click", function (e) {
+    //     e.stopPropagation(); // Prevent propagation to the background elements
+    //     closePopup();
+    // });
+
+    $("#closePopup").click(function() {
+        console.log("Closing popup");
+        popup.hide();
+    });
+
+    // popup.find("#closePopup").on("click", closePopup);
+
+    // function openPopup(planet){
+    //     return(<h1>
+    //         {planet}
+    //     </h1>);
+    // }
+
+    //function
+    // name of planet
+    // planet speed, other things
+    // close button
+    // 
+
+
+    
+
 });
