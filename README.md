@@ -17,7 +17,11 @@ Welcome to **Cosmic Explorer**, a web application developed as part of Hack at B
    ```sh
    git clone
 2. Navigate to the project directory:
-4. Run the HTML File on a server:
+4. Run the HTML File on a server
+
+- ** Or try it out in the following link:
+https://atcact.github.io/cosmic-explorer/
+
 
 
 
